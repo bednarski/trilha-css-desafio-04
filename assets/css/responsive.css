@@ -1,0 +1,56 @@
+@media screen and (min-width: 600px) {
+    header {
+        padding: 95px 24px;
+
+    }
+    header .content {
+        max-width: 757px;
+        margin: auto;
+        text-align: center;
+    }
+    header .cta {
+        display: ;
+        flex-direction: row;
+    }
+
+    h1 {
+        padding: 0 20%;
+        font-size: calc(2rem + 2vw);
+        font-weight: 400;
+    }
+    
+    h2 {
+        font-size: calc(1.5rem + 1vw);
+        font-weight: 800;
+    }
+
+    section .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "img img post";
+        gap: 27px;
+        max-width: 970px;
+        margin: auto;
+    }
+
+    section:nth-child(odd) .content {
+        grid-template-areas: "post img img";
+    }
+
+    span {
+        display: block;
+        grid-area: img;
+        max-width: 100%;
+    }
+
+    section .post {
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: inherit;
+    }
+
+
+}
